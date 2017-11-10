@@ -1,6 +1,7 @@
 h1{
-   color: blueviolet; 
+   color: black;
 }
+
 *{
     margin:0 ;
     padding: 0 ;
@@ -20,46 +21,44 @@ header{
     width: 100%;
     height: 80px;
     text-align: center;
-    background-color: gray;   
+    background-color: gray; 
+    border: 1px solid #000000;  
 }
   
 .twoboxes{
     width: 100%;
     margin-top: 100px;
-    margin-bottom: 20px;
     overflow: hidden;
 }
-.izbox, .derbox { 
+
+.box-two{ 
     float: left;
     height: 300px;
-    margin-right: 10px;
+    margin-right: 20px;
     width: calc(50% - 10px);
-}
-.derbox { 
-    margin-right: 0px;
-    margin-left: 10px;
+    border: 1px solid #000000;
 }
 
-.threeboxes {
+.box-two:last-child { 
+    margin-right: 0px;    
+}
+
+.threeboxes{
     width: 100%;
     margin-top: 20px;
     overflow: hidden;
 } 
 
-.boxiz, .boxcent, .boxder{
+.box-three{
     height: 120px;
     width: calc(100%/3 - 40px/3);
     float: left;
+    border: 1px solid #000000;
+    margin-right: 20px;
 }
-.boxiz{
-    margin-right: 10px;
-}
-.boxcent{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.boxder{
-    margin-left: 10px;
+
+.box-three:last-child{
+    margin-right: 0px;
 }
 
 article{
@@ -67,16 +66,17 @@ article{
 }
 
 .bottom{
-      height: 200px;
-      margin-top: 20px;
-      width: 100%;
-      background-color: gray;
-      position: relative;
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    border: 1px solid #000000; 
 } 
 
 .bottom article{
     width:150px;
-    height:150px ;
+    height:150px;
     background-color: gray;
     border: 1px solid #000000;
     position: absolute;  
@@ -86,12 +86,14 @@ article{
 } 
 
  @media(max-width:500px){
-    
-    .izbox, .derbox, .boxcent, .boxder, .boxiz{
+    .box-two, .box-three{
         float: none;
         margin-bottom: 20px;
         width: 100%;
         margin-left: 0;
+    }
+    .threeboxes, .bottom{
+        margin-top: 0px;
     }
  }
   
