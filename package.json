@@ -1,0 +1,26 @@
+{
+  "name": "hb-layout-floats",
+  "version": "1.0.0",
+  "description": "This is an example of how to use Floats.",
+  "private": true,
+  "scripts": {
+    "build": "node-sass css/style.scss css/style.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonicaOspina/hb-layout-floats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonicaOspina/hb-layout-floats/issues"
+  },
+  "homepage": "https://github.com/MonicaOspina/hb-layout-floats#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "node-sass": "^4.7.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-scss": "^2.1.0"
+  }
+}
