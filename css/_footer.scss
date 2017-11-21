@@ -1,0 +1,19 @@
+.bottom{
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    border: 1px solid #000000; 
+} 
+
+.bottom article{
+    width:150px;
+    height:150px;
+    background-color: gray;
+    border: 1px solid #000000;
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 

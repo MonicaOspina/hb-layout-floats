@@ -4,7 +4,10 @@
   "description": "This is an example of how to use Floats.",
   "private": true,
   "scripts": {
-    "build": "node-sass css/style.scss css/style.css --output-style compressed"
+    "build": "npm run lint && node-sass css/style.scss css/style.css --output-style compressed",
+    "lint": "stylelint 'css/style/**/*.scss' --config .stylelintrc -syntax scss",
+    "start": "npm run build -- -w -- source-map true",
+    "precommit": "npm run lint"
   },
   "repository": {
     "type": "git",
