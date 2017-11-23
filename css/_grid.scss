@@ -2,20 +2,55 @@
     width: 100%;
     margin-top: 100px;
     overflow: hidden;
-}
 
+    @include at-small-breakpoint {
+        .box-two,{
+            float: none;
+            margin-bottom: $main-spacing;
+            width: 100%;
+            margin-left: 0;
+        }
+        .threeboxes, .bottom{
+            margin-top: 0px;
+        }
+     }
+}
 .threeboxes{
     width: 100%;
-    margin-top: 20px;
+    margin-top:  $main-spacing;
     overflow: hidden;
+    
+    @include at-small-breakpoint {
+        .box-three{
+            float: none;
+            margin-bottom: $main-spacing;
+            width: 100%;
+            margin-left: 0;
+        }
+        .threeboxes, .bottom{
+            margin-top: 0px;
+        }
+     }
 } 
 
 .box-two{ 
     float: left;
     height: 300px;
-    margin-right: 20px;
+    margin-right:  $main-spacing;
     width: calc(50% - 10px);
-    border: 1px solid #000000;
+    border: 1px solid  $color-main-dark;
+
+    @include at-small-breakpoint {
+        .box-three{
+            float: none;
+            margin-bottom: $main-spacing;
+            width: 100%;
+            margin-left: 0;
+        }
+        .threeboxes, .bottom{
+            margin-top: 0px;
+        }
+     }
 }
 
 .box-two:last-child { 
@@ -26,8 +61,20 @@
     height: 120px;
     width: calc(100%/3 - 40px/3);
     float: left;
-    border: 1px solid #000000;
-    margin-right: 20px;
+    border: 1px solid $color-main-dark;
+    margin-right:  $main-spacing;
+
+    @include at-small-breakpoint {
+        .box-three{
+            float: none;
+            margin-bottom: $main-spacing;
+            width: 100%;
+            margin-left: 0;
+        }
+        .threeboxes, .bottom{
+            margin-top: 0px;
+        }
+     }
 }
 
 .box-three:last-child{

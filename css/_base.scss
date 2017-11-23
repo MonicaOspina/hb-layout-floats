@@ -1,15 +1,15 @@
 h1{
-    color: black;
+    color: $color-main-dark;
  }
 
 .container{
-    max-width: 1024px;
+    max-width: $main-width;
     width: 100%;
     margin: 0 auto;
 }
 
 article{
-    background-color: gray;
+    background-color: $color-main;
 }
 
 *{
